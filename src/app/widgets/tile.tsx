@@ -28,8 +28,8 @@ interface EmployeeCardProps {
 
 export const EmployeeCard = ({employee}: EmployeeCardProps) => {
   return (
-    <div className="bg-gradient-to-br from-violet-800 to-violet-500 w-full h-3/4 m-6 max-w rounded-2xl shadow-lg p-4 hover:shadow-xl transition duration-300 blue">
-        <div className='flex flex-col justify-between h-full'>
+    <div className="bg-gradient-to-br from-violet-800 to-violet-500 w-3/4 md:w-full h-3/4 m-6 rounded-2xl shadow-lg p-4 hover:shadow-xl transition duration-300 blue">
+        <div className='flex flex-col justify-between h-3/4 md:h-full'>
     <div className="relative w-48 h-48 rounded-xl mb-4 overflow-hidden mx-auto">
     <Image
         src={employee.imageUri} // Pass the variable directly, no backticks needed if it's already a string

@@ -106,7 +106,7 @@ export default function LiveChatPage() {
         height={90}
         width={90}
  />
-        <div className="text-4xl font-bold outfit-reg">
+        <div className="text-md md:text-4xl font-bold outfit-reg">
           {chatInfo.name}
         </div>
         <div className="flex justify-center outfit-reg" id="navbar">
@@ -152,7 +152,7 @@ export default function LiveChatPage() {
             }}
           />
           <button
-            className="bg-blue-600 text-white rounded-lg px-4 py-2 hover:bg-blue-700 transition-colors duration-200"
+            className="bg-violet-700 text-white rounded-lg px-4 py-2 hover:bg-violet-600 transition-colors duration-200"
             onClick={sendMessage}
           >
             Send

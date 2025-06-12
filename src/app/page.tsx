@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <div id="app" className="">
     <div className="flex flex-col align-center">
-      <div className="flex justify-between align-center items-center mx-8 py-4">
+      <div className="flex justify-between align-center items-center mx-2 py-4 md:mx-8">
         <div className="hidden sm:block text-4xl font-bold outfit-reg">
           <div className={ds.className}>
 

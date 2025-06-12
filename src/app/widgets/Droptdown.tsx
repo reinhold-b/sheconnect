@@ -55,7 +55,7 @@ const DropdownMenu: React.FC = () => {
           onClick={toggleDropdown}
           ref={buttonRef}
         >
-          Options
+          Language
           <svg
             className="-mr-1 size-5 text-gray-400"
             viewBox="0 0 20 20"
