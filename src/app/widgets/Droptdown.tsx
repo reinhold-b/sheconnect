@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect, useContext } from 'react';
 import { LanguageContext } from '../bla';
 import { getLangDict } from '../langDict';
+import Image from 'next/image';
 
 const DropdownMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -55,7 +56,7 @@ const DropdownMenu: React.FC = () => {
           onClick={toggleDropdown}
           ref={buttonRef}
         >
-          Language
+        <Image src={"/images/lang.png"} height={16} width={16} alt={''}  />
           <svg
             className="-mr-1 size-5 text-gray-400"
             viewBox="0 0 20 20"
