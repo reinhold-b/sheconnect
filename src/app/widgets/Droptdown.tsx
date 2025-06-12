@@ -45,10 +45,10 @@ const DropdownMenu: React.FC = () => {
 
   return (
     <div className="inline-block text-left">
-      <div className='p-2'>
+      <div className='p-0'>
         <button
           type="button"
-          className="inline-flex w-full justify-center rounded-md bg-violet-700 text-sm font-semibold text-white shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-violet-500"
+          className="p-2 inline-flex w-full justify-center rounded-xl bg-violet-700 text-sm font-semibold text-white shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-violet-500"
           id="menu-button"
           aria-expanded={isOpen}
           aria-haspopup="true"

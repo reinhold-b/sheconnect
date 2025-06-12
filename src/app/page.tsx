@@ -35,7 +35,7 @@ export default function Home() {
     <div id="app" className="">
     <div className="flex flex-col align-center">
       <div className="flex justify-between align-center items-center mx-8 py-4">
-        <div className="text-4xl font-bold outfit-reg">
+        <div className="hidden sm:block text-4xl font-bold outfit-reg">
           <div className={ds.className}>
 
           She Connect
@@ -49,12 +49,12 @@ export default function Home() {
           <DropdownMenu/> 
         </div>
      </div>
-      <div className="text-7xl text-center p-30 font-bold">
+      <div className="text-4xl md:text-5xl lg:text-7xl text-center p-30 font-bold">
         {dict.welcome} <span className={ds.className}>SheConnect</span>
       </div>
       <FocusText />
       <SupportOffersSection />
-      <div className="text-2xl p-10 font-bold bg-violet-700 text-white">
+      <div className="text-sm md:text-md lg:text-2xl p-10 font-bold bg-violet-700 text-white">
       {dict.footText1} 
 <br />
 <br />
