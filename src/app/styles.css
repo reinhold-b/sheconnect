@@ -1,0 +1,14 @@
+.horizontal-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#app {
+    width: 100vw;
+}
+
+.gridele {
+  background-color: var(--background);
+}
