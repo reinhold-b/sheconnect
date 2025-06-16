@@ -47,7 +47,8 @@ export default function ChatPage() {
       // Get bot response based on keywords (using the new substring matching)
       const botAnswers = triggerAnswer(userMessageText);
       if (!botAnswers || botAnswers.length == 0) {
-        var finalBotMessage = 'Vielen Dank für Ihre Nachricht. Ich lerne noch dazu! Wie kann ich genauer helfen?'; // Fallback message
+        var finalBotMessage = "Thanks for your message. Unfortunately, I don't have an answer for you right now.\
+        Please get in contact with our team"; // Fallback message
         setTimeout(() => {
           setChatMessages((prevMessages) => [...prevMessages, { id: Date.now() + 1, sender: 'Bot', text: finalBotMessage }]);
         }, 500);

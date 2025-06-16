@@ -25,9 +25,9 @@ export default function LiveChatPage() {
   const messagesEndRef = useRef<HTMLDivElement>(null); // Explicitly type useRef for div
 
   const employees: Employee[] = [
-    new Employee("Leoni", dict.descLeo, "/images/leo_profile.jpeg", "test"),
-    new Employee("Marcella", dict.descMarcy, "/images/marci_profile.jpeg", "test"),
-    new Employee("Lula", dict.descLula, "/images/lula_profile.jpeg", "test"),
+    new Employee("Leoni", dict.descLeo, "/images/leo_profile.jpeg", "German, English", dict.availabilityLeo,),
+    new Employee("Marcella", dict.descMarcy, "/images/marci_profile.jpeg", "German, English", dict.availabilityMarcy,),
+    new Employee("Lula", dict.descLula, "/images/lula_profile.jpeg", "German, English", dict.availabilityLula,),
 ]
 
   const chatbotResponses = multilingualChatbotResponses;

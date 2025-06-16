@@ -6,6 +6,7 @@ export interface IEmployee {
     imageUri: string,
     description: string,
     language: string,
+    availability: string,
 }
 
 export class Employee implements IEmployee{
@@ -14,12 +15,14 @@ export class Employee implements IEmployee{
     public description: string;
     public imageUri: string;
     public language: string;
+    public availability: string;
 
-    public constructor(name: string, description: string, imageUri: string, language: string) {
+    public constructor(name: string, description: string, imageUri: string, language: string, availability: string,) {
         this.name = name;
         this.description = description;
         this.imageUri = imageUri;
         this.language = language;
+        this.availability = availability;
     }
 }
 interface EmployeeCardProps {
@@ -41,6 +44,7 @@ export const EmployeeCard = ({employee}: EmployeeCardProps) => {
      <div className="space-y-10">
         <h2 className="text-4xl text-white font-semibold">{employee.name}</h2>
         <p className="text-white text-sm font-bold opacity-85 h-40">{employee.description}</p>
+        <p className="text-sm text-white mt-2">Availability: {employee.availability}</p>
         <p className="text-sm text-white mt-2">Language: {employee.language}</p>
       </div>
  

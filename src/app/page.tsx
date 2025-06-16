@@ -26,11 +26,11 @@ export default function Home() {
   const dict = getLangDict(lang);
 
   const employees: Employee[] = [
-      new Employee("Leoni", dict.descLeo, "/images/leo_profile.jpeg", "test"),
-      new Employee("Marcella", dict.descMarcy, "/images/marci_profile.jpeg", "test"),
-      new Employee("Lula", dict.descLula, "/images/lula_profile.jpeg", "test"),
-  ]
- 
+    new Employee("Leoni", dict.descLeo, "/images/leo_profile.jpeg", "German, English", dict.availabilityLeo,),
+    new Employee("Marcella", dict.descMarcy, "/images/marci_profile.jpeg", "German, English", dict.availabilityMarcy,),
+    new Employee("Lula", dict.descLula, "/images/lula_profile.jpeg", "German, English", dict.availabilityLula,),
+]
+
   return (
     <div id="app" className="">
     <div className="flex flex-col align-center">
