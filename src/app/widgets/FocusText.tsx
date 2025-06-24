@@ -11,7 +11,7 @@ const FocusText = () => {
       <div className=" bg-rose-500 dark:bg-violet-700 px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 rounded-2xl">
         <figure className="max-w-screen-md">
         <div className='flex justify-center pb-4'>
-        <svg clipRule="evenodd" fill="#e60076" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" width="80" height="90" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z" fill-rule="nonzero"/></svg>
+        <svg clipRule="evenodd" fill="#e60076" fillRule="evenodd" strokeLinejoin="round" strokeMiterlimit="2" width="80" height="90" viewBox="0 0 24 24"><path d="M13 3.056v-1.056c0-.552-.448-1-1-1s-1 .448-1 1v1.052c-6.916.522-10.372 5.594-11 9.906 1.864-2.677 6.136-2.677 8 0 1.839-2.641 6.047-2.685 7.917 0 1.864-2.677 6.219-2.677 8.083 0-.625-4.291-4.125-9.333-11-9.902zm0 10.101v6.843c0 1.657-1.343 3-3 3s-3-1.343-3-3v-1h2v1c0 .551.449 1 1 1s1-.449 1-1v-6.866c.68-.226 1.27-.242 2 .023z"/></svg>
         </div>
           <blockquote>
             <p className="text-md md:text-lg lg:text-2xl font-semibold text-white">
