@@ -34,7 +34,10 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center align-center outfit-reg" id="navbar">
-          <div className="mx-4">Element</div>
+          <a href="https://app.element.io/#/room/#SheConnect:home.zendit.digital">
+<div className="mx-4">Element</div>
+          </a>
+
           <div className="mx-4"><Link href={"/bot"}>{dict.chatbotMilaMenu}</Link></div>
           <div className="mx-4"><Link href={"/chat"}>{dict.liveChatMenu}</Link></div>
           <div className="mx-4"><Link href={"/team"}>{dict.teamMenu}</Link></div>
