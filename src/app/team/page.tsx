@@ -10,51 +10,51 @@ import DropdownMenu from "../widgets/Droptdown";
 import { Dancing_Script } from "next/font/google";
 
 const ds = Dancing_Script({
-    subsets: ['latin'],
-  })
-   
+  subsets: ["latin"],
+});
 
 export default function Home() {
   let [lang, setLang] = useContext(LanguageContext);
   const dict = getLangDict(lang);
 
   const employees: Employee[] = [
-    new Employee("Leoni", dict.descLeo, "/images/leo_profile.jpeg", "German, English", dict.availabilityLeo,),
-    new Employee("Marcella", dict.descMarcy, "/images/marci_profile.jpeg", "German, English", dict.availabilityMarcy,),
-    new Employee("Lula", dict.descLula, "/images/lula_profile.jpeg", "German, English", dict.availabilityLula,),
-]
+    new Employee("Leoni", dict.descLeo, "/images/leo_profile.jpeg", "German, English", dict.availabilityLeo),
+    new Employee("Marcella", dict.descMarcy, "/images/marci_profile.jpeg", "German, English", dict.availabilityMarcy),
+    new Employee("Lula", dict.descLula, "/images/lula_profile.jpeg", "German, English", dict.availabilityLula),
+  ];
 
   return (
     <div id="app" className="">
       <div className="flex justify-between align-center items-center mx-2 py-4 md:mx-8">
         <div className="hidden sm:block text-4xl font-bold outfit-reg">
-          <div className={ds.className}>
-
-          She Connect
-          </div>
+          <div className={ds.className}>She Connect</div>
         </div>
         <div className="flex justify-center align-center outfit-reg" id="navbar">
           <a href="https://app.element.io/#/room/#SheConnect:home.zendit.digital">
-<div className="mx-4">Element</div>
+            <div className="mx-4">Element</div>
           </a>
 
-          <div className="mx-4"><Link href={"/bot"}>{dict.chatbotMilaMenu}</Link></div>
-          <div className="mx-4"><Link href={"/chat"}>{dict.liveChatMenu}</Link></div>
-          <div className="mx-4"><Link href={"/team"}>{dict.teamMenu}</Link></div>
-          <DropdownMenu/> 
+          <div className="mx-4">
+            <Link href={"/bot"}>{dict.chatbotMilaMenu}</Link>
+          </div>
+          <div className="mx-4">
+            <Link href={"/chat"}>{dict.liveChatMenu}</Link>
+          </div>
+          <div className="mx-4">
+            <Link href={"/team"}>{dict.teamMenu}</Link>
+          </div>
+          <DropdownMenu />
         </div>
-     </div>
-     <div className="flex flex-col md:flex-row items-center md:justify-evenly">
-          {employees.map((emp, index) => (
+      </div>
+      <div className="flex flex-col md:flex-row items-center md:justify-evenly">
+        {employees.map((emp, index) => (
           // Add a unique 'key' prop when mapping over lists in React
           <EmployeeCard key={index} employee={emp} />
         ))}
       </div>
       <div className="fixed bottom-4 left-4">
         <Link className="bg-violet-900 rounded-xl w-12 h-12 flex flex-row justify-center items-center" href={"/"}>
-        <Image
-        className="p-2"
-                  src={"/images/home.png"} alt={""} width={32} height={32}       />
+          <Image className="p-2" src={"/images/home.png"} alt={""} width={32} height={32} />
         </Link>
       </div>
     </div>
