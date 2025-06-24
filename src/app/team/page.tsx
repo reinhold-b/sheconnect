@@ -46,7 +46,7 @@ export default function Home() {
           <DropdownMenu />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center md:justify-evenly">
+      <div className="flex flex-col md:flex-row items-center md:justify-evenly md:items-start">
         {employees.map((emp, index) => (
           // Add a unique 'key' prop when mapping over lists in React
           <EmployeeCard key={index} employee={emp} />
