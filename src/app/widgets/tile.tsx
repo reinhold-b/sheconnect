@@ -30,7 +30,7 @@ interface EmployeeCardProps {
 
 export const EmployeeCard = ({ employee }: EmployeeCardProps) => {
   return (
-    <div className="bg-gradient-to-br from-violet-800 to-violet-500 md:w-3/4 w-full m-6 rounded-2xl shadow-lg p-4 hover:shadow-xl transition duration-300 blue">
+    <div className="bg-gradient-to-br from-violet-800 to-violet-500 w-3/4 md:w-full m-6 rounded-2xl shadow-lg p-4 hover:shadow-xl transition duration-300 blue">
       <div className="flex flex-col justify-between md:h-full">
         <div className="relative w-48 h-48 rounded-xl mb-4 overflow-hidden mx-auto">
           <Image
